@@ -2,7 +2,13 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <>
+    <footer className=' fixed bottom-0 bg-additionalColor w-full h-12'>
+      <nav>
+
+      </nav>
+    </footer>
+    </>
   )
 }
 
