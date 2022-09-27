@@ -5,6 +5,7 @@ import Login from "./components/login/Login";
 import Navbar from "./components/navbar/Navbar";
 import Walkthrough from "./components/walkthrough/Walkthrough";
 import Player from "./components/player/Player";
+import Event from "./components/events-feed/Event";
 import { useDataLayerValue } from "./components/datalayer/DataLayer";
 import { Route, Routes } from "react-router";
 
@@ -49,14 +50,9 @@ function App() {
     return (
       <div>
       {
-        token? (
-          <Player spotify={spotify} />
-        ) : (
-          <Login/>
-        )
+       <Event/>
       }
-     <Navbar/>
-     <Walkthrough/>
+    
     </div> 
     )
   
