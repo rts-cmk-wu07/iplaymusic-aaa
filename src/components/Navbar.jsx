@@ -3,7 +3,7 @@ import { PulseOutline, MicOutline, RadioOutline, ContrastOutline, SettingsOutlin
 const Navbar = () => {
   return (
     <div>
-    <footer className=' fixed bottom-0 bg-additionalColor w-full h-12'>
+    <footer className=' fixed bottom-0 bg-additionalColor w-full h-12 flex flex-col justify-center '>
       <nav className='flex justify-evenly pt-1.5'> 
       
       <PulseOutline 
@@ -41,5 +41,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar

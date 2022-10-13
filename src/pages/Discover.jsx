@@ -1,6 +1,6 @@
 
 import { useDispatch, useSelector } from 'react-redux';
-import {Error, Loader, SongCard} from '../components';
+import {Error, Loader, SongCard , Navbar} from '../components';
 import { genres } from '../assets/constants'
 import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 
@@ -42,6 +42,9 @@ const Discover = () => {
 
                     />
                 ))}
+            </div>
+            <div>
+                <Navbar/>
             </div>
         </div>
     )
